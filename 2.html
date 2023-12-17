@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吸隔音牆面選擇系統</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        select, textarea {
+            margin-bottom: 10px;
+        }
+
+        #feedback {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>吸隔音牆面選擇系統</h1>
+
+    <form id="questionForm">
+        <label for="question1">1. 選擇吸隔音功能用途：</label>
+        <br>
+        <select name="question1">
+            <option value="absorption">吸音</option>
+            <option value="isolation">隔音</option>
+            <option value="absorptionAndIsolation">吸隔音</option>
+        </select>
+        <br>
+
+        <label for="question2">2. 您預計安裝的場所：</label>
+        <br>
+        <select name="question2">
+            <option value="meetingRoom">會議室</option>
+            <option value="recordingStudio">錄音室</option>
+            <option value="audioRoom">影音室</option>
+            <option value="office">辦公室</option>
+            <option value="restaurant">餐廳</option>
+            <option value="factory">工廠</option>
+            <option value="musicClassroom">學校音樂教室</option>
+            <option value="residence">住宅</option>
+            <option value="commercialSpace">商業空間</option>
+            <option value="kitchen">廚房</option>
+        </select>
+        <br>
+
+        <label for="question3">3. 您的成本預算考量：</label>
+        <br>
+        <select name="question3">
+            <option value="high">高</option>
+            <option value="low">低</option>
+        </select>
+        <br>
+
+        <label for="question4">4. 您對於美觀裝飾性要求：</label>
+        <br>
+        <select name="question4">
+            <option value="high">高</option>
+            <option value="low">低</option>
+        </select>
+        <br>
+
+        <label for="question5">5. 您對於安裝工程的要求：</label>
+        <br>
+        <select name="question5">
+            <option value="high">高</option>
+            <option value="low">低</option>
+        </select>
+        <br>
+
+        <input type="button" value="提交" onclick="submitForm()">
+    </form>
+
+    <div id="feedback">
+        <h2 id="feedbackText">感謝您的回饋！</h2>
+        <p id="recommendation" style="font-weight: bold; font-size: 1.2em; background-color: #f2f2f2; padding: 10px;">我們推薦：</p>
+		<table>
+  <tr>
+    <td>布藝板塊</td>
+    <td>泡綿吸音棉</td>
+    <td>聚酯纖維</td>
+    <td>木質吸音板</td>
+  </tr>
+  <tr>
+    <td><img src="https://i02.c.aliimg.com/img/ibank/O1CN01Nc1AYf1IlMMejCJ12_!!2212043850933-0-cib.310x310.jpg" border="0"width="200" height="200"></a></td>
+    <td><img src="https://www.pkwe.com.tw/upload/Product/F_20170121035291E5lbui.JPG" border="0"width="200" height="200"></a></td>
+    <td><img src="https://media.karousell.com/media/photos/products/2020/4/25/_60_x_60_x_09cm_1587833573_94ad87cf_progressive.jpg" border="0"width="200" height="200"></a></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT01S0-2Ki_8JHOullvvwwfgixWWsjPek9GPNRXqQ6kevIwSP9FwNEOwXCT-10pOQ67GTE&usqp=CAU" border="0"width="200" height="200"></a></td>
+  </tr>
+  <tr>
+    <td>布藝板塊是一種以布料為主要材質的吸音材料，通常應用於各種室內場所，如會議室、辦公室等。其特點在於外觀優雅、質感豐富，能夠同時達到吸音和裝飾的效果。布藝板塊可以有效減緩聲波的反射，減少噪音和回音，提供更舒適的環境。安裝簡便，並且能夠搭配不同的布料和顏色，使其適應不同風格和設計需求。</td>
+    <td>泡綿吸音棉是一種常見的吸音材料，主要由泡沫塑料製成。其結構特點使其能夠有效地吸收聲波，減少室內噪音和回音。泡綿吸音棉具有輕質、柔軟、易安裝的優勢，可應用於影音室、錄音室等需要精確控制聲音環境的場所。此外，泡綿吸音棉還具有一定的彈性，有助於調節室內聲學特性，提高音質。</td>
+    <td>聚酯纖維吸音板以聚酯纖維為主要原料，其纖維結構能夠有效地吸收聲波，降低噪音水平。這種吸音材料適用於需要高效吸音效果的場所，例如會議室、辦公室等。聚酯纖維吸音板具有彈性和耐久性，並且可以進行不同形式的裝飾，使其在室內設計中更具靈活性。</td>
+    <td>木質吸音板是一種以木材為基礎的吸音材料，常見於各種室內環境，如影音室、會議室等。木質吸音板的表面通常經過特殊處理，既能夠實現良好的吸音效果，同時具有自然木材的質感和美觀。這種材料還能夠提供獨特的溫暖感，使其成為許多場所的理想選擇。</td>
+  </tr>
+</table>
+       <table>
+  <tr>
+    <td>玻璃纖維</td>
+    <td>岩棉</td>
+    <td>金屬隔音板</td>
+    <td>石膏隔音板</td>
+	<td>矽酸鈣隔音板</td>
+  </tr>
+  <tr>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe5g0hKmf41HI4fNQ-bfFljgipwBnuXm9-Dg&usqp=CAU" border="0"width="200" height="200"></a></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9_0AIyWjZ5iJHfPKDXxWexrmO_kLecbn6Q&usqp=CAU" border="0"width="200" height="200"></a></td>
+    <td><img src="https://www.vovo.tw/images/ms090714-2.jpg" border="0"width="200" height="200"></a></td>
+    <td><img src="https://img.diytrade.com/cdimg/1677761/24256898/0/1324257948.jpg" border="0"width="200" height="200"></a></td>
+	<td><img src="https://static.iyp.tw/41444/products/photooriginal-2224291-C866r.jpg" border="0"width="200" height="200"></a></td>
+  </tr>
+  <tr>
+    <td>玻璃纖維是一種輕量、耐用的吸音材料，通常應用於商業空間、工廠等需要抗擊性能的場所。玻璃纖維的結構使其能夠有效地吸收聲波，同時不易受到損壞。此外，玻璃纖維還具有防火性能，是一種安全可靠的吸音材料。。</td>
+    <td>岩棉是一種由玄武岩等天然礦石經高溫熔融製成的吸音材料。岩棉的纖維結構使其具有優異的吸音性能，並且可以應用於各種場所，包括商業空間、住宅、工廠等。岩棉同時具有良好的隔音效果，有助於改善室內環境的聲學特性。</td>
+    <td>金屬隔音板是一種主要由金屬材料製成的隔音材料，應用於需要控制噪音傳播的場所，如工廠等。金屬隔音板的結構可以反射、吸收或隔絕聲波，從而有效地減少噪音的擴散。它通常具有高強度和耐久性，能夠長期穩定地發揮隔音效果。</td>
+    <td>石膏隔音板是一種以石膏為主要成分的隔音材料，主要應用於需要強效隔音的場所，如錄音室、影音室等。石膏隔音板具有優異的隔音性能，能夠有效地隔絕聲音，提供一個靜音的環境。它還具有防火性能，增加了室內安全性。</td>
+	<td>矽酸鈣隔音板主要由矽酸鈣等礦石製成，是一種環保且高效的隔音材料。它應用於需要高水平隔音的場所，如錄音室、影音室等。矽酸鈣隔音板具有輕質、耐火、耐高溫的特點，並且能夠有效地隔絕不同頻率的聲音，提供極佳的隔音效果。</td>
+  </tr>
+</table>
+
+    </div>
+
+    <script>
+        function submitForm() {
+            // 獲取選擇的答案
+            var answer1 = document.querySelector('select[name="question1"]').value;
+            var answer2 = document.querySelector('select[name="question2"]').value;
+            var answer3 = document.querySelector('select[name="question3"]').value;
+            var answer4 = document.querySelector('select[name="question4"]').value;
+            var answer5 = document.querySelector('select[name="question5"]').value;
+
+            // 根據答案給出回饋
+            var feedbackText = "感謝您的回饋！";
+            feedbackText += " 您選擇的功能是：" + answer1 + "。";
+            feedbackText += " 預計安裝的場所是：" + answer2 + "。";
+            feedbackText += " 成本預算考量：" + answer3 + "。";
+            feedbackText += " 對美觀裝飾性的要求：" + answer4 + "。";
+            feedbackText += " 對安裝工程的要求：" + answer5 + "。";
+
+            // 推薦選項
+            var recommendation = "我們推薦：";
+            if (answer1 === "absorption" && (answer2 === "meetingRoom" || answer2 === "audioRoom" || answer2 === "office" || answer2 === "restaurant" || answer2 === "commercialSpace" || answer2 === "residence") && answer3 === "low" && answer4 === "high" && answer5 === "low") {
+                recommendation += "布藝板塊";
+            } else if (answer1 === "absorption" && (answer2 === "audioRoom" || answer2 === "recordingStudio" || answer2 === "meetingRoom" || answer2 === "office" || answer2 === "musicClassroom" || answer2 === "commercialSpace" || answer2 === "residence") && answer3 === "low" && answer4 === "low" && answer5 === "low") {
+                recommendation += "泡綿吸音棉";
+            } else if (answer1 === "absorptionAndIsolation" && (answer2 === "audioRoom" || answer2 === "recordingStudio" || answer2 === "meetingRoom" || answer2 === "office" || answer2 === "musicClassroom" || answer2 === "commercialSpace" || answer2 === "residence") && answer3 === "high" && answer4 === "high" && answer5 === "low") {
+                recommendation += "聚酯纖維吸音板";
+            } else if (answer1 === "absorptionAndIsolation" && (answer2 === "audioRoom" || answer2 === "meetingRoom" || answer2 === "office" || answer2 === "restaurant" || answer2 === "commercialSpace" || answer2 === "residence" || answer2 === "kitchen") && answer3 === "high" && answer4 === "high" && answer5 === "low") {
+                recommendation += "木質吸音板";
+            } else if (answer1 === "absorption" && (answer2 === "factory" || answer2 === "commercialSpace" || answer2 === "residence" || answer2 === "kitchen") && answer3 === "low" && answer4 === "low" && answer5 === "low") {
+                recommendation += "玻璃纖維";
+            } else if (answer1 === "absorptionAndIsolation" && (answer2 === "factory" || answer2 === "commercialSpace" || answer2 === "residence" || answer2 === "kitchen") && answer3 === "low" && answer4 === "low" && answer5 === "high") {
+                recommendation += "岩棉";
+            } else if (answer1 === "isolation" && (answer2 === "factory" || answer2 === "commercialSpace" || answer2 === "residence") && answer3 === "high" && answer4 === "low" && answer5 === "high") {
+                recommendation += "金屬隔音板";
+            } else if (answer1 === "isolation" && (answer2 === "audioRoom" || answer2 === "recordingStudio" || answer2 === "meetingRoom" || answer2 === "commercialSpace" || answer2 === "residence") && answer3 === "high" && answer4 === "high" && answer5 === "high") {
+                recommendation += "石膏隔音板";
+            } else if (answer1 === "isolation" && (answer2 === "audioRoom" || answer2 === "recordingStudio" || answer2 === "meetingRoom" || answer2 === "commercialSpace" || answer2 === "residence") && answer3 === "high" && answer4 === "high" && answer5 === "high") {
+                recommendation += "矽酸鈣隔音板";
+            } else {
+                // 根據場所進行進一步的推薦
+                switch (answer2) {
+                    case "audioRoom":
+                    case "recordingStudio":
+                    case "musicClassroom":
+                        recommendation += "泡綿吸音棉、聚酯纖維吸音板、木質吸音板、石膏隔音板、矽酸鈣隔音板";
+                        break;
+                    case "meetingRoom":
+                    case "office":
+                        recommendation += "布藝板塊、泡綿吸音棉、聚酯纖維吸音板、木質吸音板、石膏隔音板、矽酸鈣隔音板";
+                        break;
+                    case "commercialSpace":
+                        recommendation += "布藝板塊、泡綿吸音棉、聚酯纖維吸音板、木質吸音板、玻璃纖維、岩棉、金屬隔音板、石膏隔音板、矽酸鈣隔音板";
+                        break;
+                    case "restaurant":
+                        recommendation += "布藝板塊、木質吸音板";
+                        break;
+                    case "factory":
+                        recommendation += "玻璃纖維、岩棉、金屬隔音板";
+                        break;
+                    case "residence":
+                        recommendation += "布藝板塊、泡綿吸音棉、聚酯纖維吸音板、木質吸音板、玻璃纖維、岩棉、金屬隔音板、石膏隔音板、矽酸鈣隔音板";
+                        break;
+                    case "kitchen":
+                        recommendation += "木質吸音板、玻璃纖維、岩棉";
+                        break;
+                    default:
+                        recommendation += "無特定推薦選項";
+                        break;
+                }
+			
+            }
+
+            // 顯示回饋和推薦
+            document.getElementById("questionForm").style.display = "none";
+            document.getElementById("feedback").style.display = "block";
+            document.getElementById("feedbackText").innerText = feedbackText;
+            document.getElementById("recommendation").innerText = recommendation;
+        }
+		
+    </script>
+
+</body>
+</html>
+
+
